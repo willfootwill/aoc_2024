@@ -4,4 +4,4 @@ import numpy as np
 df = pd.read_csv('~/github/aoc_2024/input/day1', header=None, sep=r'\s+')
 df[:] = np.sort(df.values, axis=0)
 df["delta"] = abs(df[0] - df[1])
-sum(df["delta"])
+print(sum(df["delta"]))
